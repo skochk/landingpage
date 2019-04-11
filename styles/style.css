@@ -402,7 +402,7 @@ header{
 
 
 .screen6{
-	height: 1080px;
+	/*height: 1080px;*/
 	background-color: #29317E;
 }
 .screen6_content{
@@ -433,6 +433,7 @@ header{
 
 .screen6 .screen1_button{
 	margin-top: 50px;
+	margin-bottom: 50px;
 	color: white;
 }
 
@@ -552,10 +553,15 @@ header{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		width: 90%;
+		margin: 0 auto;
 	}
 
 	.screen2 .screen2_button{
 		margin: 0 auto;
+	}
+	.screen2_text2{
+		display: none;
 	}
 	.screen1{
 		height: 1700px;
@@ -574,16 +580,20 @@ header{
 	}
 
 	.screen1_list{
-		margin: 0 auto;
+	;
 		width: 90%;
 	}
 	.screen1_pic{
-		margin: 0 auto;
 		margin-top: -50px;
 	}
-	.screen1_info{
+	.screen1_info, .screen1_button, .screen1_pic, .screen1_list{
 		margin: 0 auto;
 	}
+
+	.screen1_button{
+		margin-top: 0px;
+	}
+
 }
 
 @media screen and (max-width: 1300px){
@@ -624,13 +634,17 @@ header{
 	.container{
 		width: 100%;
 	}
+
+
+	.screen6_content{
+		width: 700px;
+	}
 }
 
 
 @media screen and(max-width: 1100px){
-	.screen6_content{
-		width: 700px;
-	}
+	
+
 	.item3{
 		order: 1;
 	}
@@ -639,3 +653,9 @@ header{
 	}
 }
 
+
+@media screen and(max-width: 800px){
+	.screen6{
+		/*height: 0;*/
+	}
+}
