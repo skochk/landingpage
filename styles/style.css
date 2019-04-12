@@ -22,7 +22,7 @@ text-transform: uppercase
 
 .container{
 	margin: 0 auto;
-	width: 1300px;
+	max-width: 1300px;
 }
 header{
 	padding-top: 30px;
@@ -89,12 +89,11 @@ header{
 	border-radius: 30px;
 	margin-top: 40px;
 	font-weight: normal;
+	margin-bottom: 1040px;
 
 }
 
-.screen1 .screen1_button{
-	margin-top: -70px;
-}
+
 
 .screen1_button_block{
 	margin-right: 10px;
@@ -144,7 +143,7 @@ header{
 }
 .screen2_1{
 	margin-top: 35px;
-	min-width: 625px;
+	max-width: 625px;
 	font-size: 18px;
 	line-height: 30px;
 }
@@ -192,6 +191,7 @@ header{
 	background: linear-gradient(180deg, #F2A04A 0%, #F2C24D 100%), #C4C4C4;
 	border-radius: 100px;
 	font-size: 18px;
+	margin-bottom: 50px;
 }
 
 .button_line{
@@ -199,6 +199,7 @@ header{
 	height: 0px;
 	border: 2px solid #FFFFFF;
 	margin-right: 10px;
+	background-color: #FFFFFF;
 }
 
 .screen3_header{
@@ -282,7 +283,7 @@ header{
 	display: flex;
 	align-items: center;
 	padding-top: 100px;
-	margin-bottom: 60px;
+	
 	color: white;
 }
 
@@ -354,7 +355,7 @@ header{
 }
 
 .screen5{
-	height: 700px;
+	/*height: 700px;*/
 }
 
 
@@ -378,16 +379,18 @@ header{
 }
 
 .screen5_content{
-	width: 1000px;
+	
 	display: flex;
 	flex-direction: row;
-
+	flex-wrap: wrap;
 	margin-top: 50px;
 	justify-content: space-between;
 
 }	
 .screen5_content_block{
-	margin-right: 145px;
+	width: 240px;
+
+	/*margin-right: 145px;*/
 	font-size: 18px;
 	font-weight: normal;
 }
@@ -404,6 +407,7 @@ header{
 .screen6{
 	/*height: 1080px;*/
 	background-color: #29317E;
+	color: white;
 }
 .screen6_content{
 	width: 1100px;
@@ -426,16 +430,11 @@ header{
 .screen6_content_item h2{
 	font-size: 26px;
 	margin: 24px 0 13px 0;
-		text-transform: uppercase;
+	text-transform: uppercase;
 	color: #F2A04A;
 	font-family: Proxima Nova, sans-serif;
 }
 
-.screen6 .screen1_button{
-	margin-top: 50px;
-	margin-bottom: 50px;
-	color: white;
-}
 
 .screen7 {
 	/*height: 500px;*/
@@ -485,14 +484,11 @@ header{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	margin-top: -100px;
 }
 .screen8_text{
 	font-size: 18px;
 }
-.screen8 .screen2_button{
-	margin-top: -10px;
-}
+
 
 .screen8_map{
 	position: relative;
@@ -631,14 +627,23 @@ header{
 		height: 1300px;
 	}
 
-	.container{
-		width: 100%;
-	}
-
 
 	.screen6_content{
 		width: 700px;
 	}
+
+	.screen5_content{
+		flex-direction: column;
+		width: 90%;
+		margin: 0 auto;
+		align-items: center;
+
+	}
+
+	.screen2_1{
+		width: 100%;
+	}
+
 }
 
 
